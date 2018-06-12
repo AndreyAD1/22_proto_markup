@@ -9,3 +9,36 @@
 .carousel-control-next-icon, .carousel-control-prev-icon {
   background: red;
 }
+
+.application-form {
+  background-color: #d0d0d0;
+}
+
+.head {
+  background-color: #eaeaea;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+  margin: 0;
+  background-color: #dddddd;
+}
+
+.left-item {
+  float: left;
+  margin-right: 2%;
+}
+
+.left-header {
+  margin-left: 5%;
+  min-width: 350px;
+}
+
+.right-header {
+  float: right;
+  min-width: 350px;
+  margin-right: 3%;
+}
+
