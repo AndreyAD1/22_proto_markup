@@ -1,0 +1,11 @@
+.application-info {
+  border-top: 2px solid;
+}
+
+.application-info.last {
+  border-bottom: 2px solid;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  background: red;
+}

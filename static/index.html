@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Поставщики Новосибирска</title>
+</head>
+<body>
+<!--верхнее меню-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="ml-4">Регион:</div>
+      <div class="dropdown ml-2">
+        <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Новосибирск и область
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Другой регион</a>
+        </div>
+      </div>
+    </div>
+    <div class="ml-auto">
+      <a class="nav-item nav-link" href="#">Леонид Федорович</a>
+    </div>
+    <div class="ml-auto">
+      <a class="nav-item nav-link" href="#">выход</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-10 ml-auto mr-auto">
+        <div class="row">
+          <div class="col">Участники в Новосибирске:</div>
+          <div class="col">
+            <a href="#">105 оптовых компаний</a>
+          </div>
+          <div class="col">
+            <a href="#">25 производителей</a>
+          </div>
+        </div>
+      </div>
+
+<!--форма заявки-->
+      <div class="col-10 ml-auto mr-auto">
+        <div class="row">
+          <div class="ml-auto mr-auto">ВАМ ПОЗВОНЯТ ЛУЧШИЕ ПОСТАВЩИКИ НОВОСИБИРСКА</div>
+          <div class="form-block application-form ml-auto mr-auto">
+            <p>Я ищу</p>
+            <div class="ckeckboxes">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="Check1">
+                <label class="form-check-label" for="Check1">
+                  ЖБИ
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="Check2">
+                <label class="form-check-label" for="Check2">
+                  Кирпич / Газобетон / Брус
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="Check3">
+                <label class="form-check-label" for="Check3">
+                  Бетон / Раствор
+                </label>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a class="dropdown-toggle" href="#" id="menuDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Новосибирск и область
+              </a>
+              <div class="dropdown-menu" aria-labelledby="menuDropdown">
+                <a class="dropdown-item" href="#">Другой регион</a>
+              </div>
+            </div>
+            <form>
+              <div class="form-group row">
+                <label for="inputDescription" class="col-sm-2 col-form-label">Описание *</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputDescription" placeholder="">
+                </div>
+              </div>
+            </form>
+            <p>Пример: нужно фбс</p>
+            <form>
+              <div class="form-row">
+                <div class="col">
+                  <div class="form-group row">
+                    <label for="telephone-number" class="col-sm-4 col-form-label">Телефон *</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="" id="telephone-number">
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group row">
+                    <label for="name" class="col-sm-4 col-form-label">Имя</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="" id="name">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div align="center">
+              <button type="button" class="btn btn-outline-dark btn-lg">ОПУБЛИКОВАТЬ ЗАЯВКУ</button>
+            </div>
+          </div>
+<!--раздел "Свежие заявки"-->
+          <div class="w-100"></div>
+          <div class="col-8 ml-auto mr-auto new-applications">
+            <div class="row">
+              <div class="col-auto ml-auto mr-auto">Свежие заявки</div>
+              <div class="w-100"></div>
+              <!--меню свежих заявок-->
+              <div class="col app-menu">
+
+                <div class="row">
+                  <div class="col-auto app-section">
+                    <div class="row">
+                      <div class="col-auto app-type">раздел:</div>
+                      <div class="col-auto section-dropdown">
+                        <a class="dropdown-toggle" href="#" id="applicationType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Все
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="applicationType">
+                          <a class="dropdown-item" href="#">Другой раздел</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto app-region ml-auto">
+                    <div class="row">
+                    <div class="col-auto region">регион:</div>
+                      <div class="col-auto region-dropdown">
+                        <a class="dropdown-toggle" href="#" id="applicationRegion" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Новосибирск и область
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="applicationRegion">
+                          <a class="dropdown-item" href="#">Другой регион</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+<!--карточки заявок-->
+              <div class="col-12 application-info">
+                <div class="row">
+                  <div class="col-9 application-features">
+                    <p>вчера, в 21:30</p>
+                    <p>60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.</p>
+                    <p class="customer-name">Алексей</p>
+                    <div style="display: inline-block; float: left">
+                      <button type="button" class="btn brn-sm">Показать телефон</button>
+                    </div>
+                    <p>12 просмотров</p>
+                  </div>
+                  <div class="col-auto ml-auto bookmarks">
+                    <a href="#">в закладки</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 application-info last">
+                <div class="row">
+                  <div class="col-9 application-features">
+                    <p>вчера, в 21:30</p>
+                    <p>60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.</p>
+                    <p class="customer-name">Алексей</p>
+                    <div style="display: inline-block; float: left">
+                      <button type="button" class="btn brn-sm">Показать телефон</button>
+                    </div>
+                    <p>12 просмотров</p>
+                  </div>
+                  <div class="col-auto ml-auto bookmarks">
+                    <a href="#">в закладки</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div align="center">
+              <button type="button" class="btn btn-outline-dark btn-lg">Посмотреть все заявки</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-100"></div>
+      <div class="col-12 reviews">
+        <div class="row">
+          <div class="col-6 offset-3">
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div align="center">
+                    img1
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div align="center">img2</div>
+                </div>
+                <div class="carousel-item">
+                  <div align="center">img3</div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+                <span class="sr-only">Предыдущий</span>
+              </a>
+              <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="false"></span>
+                <span class="sr-only">Следующий</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn brn-sm">Оставить отзыв</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div align="center">Вы поставщик?</div>
+    <div class="container">
+      <div class="row">
+        <div class="col-6 left-footer-col">
+          <p>Для доступа к телефонам покупателей заполните форму или позвоните нам +7 999 888-77-66</p>
+          <p>Текст с дополнительной информацией по условиям сотрудничества.<br>
+          Возможно, стоит вынести его на отдельную страницу.</p>
+          <p>Для доступа к телефонам покупателей заполните форму или позвоните нам +7 999 888-77-66</p>
+          <p>Текст с дополнительной информацией по условиям сотрудничества.<br>
+          Возможно, стоит вынести его на отдельную страницу.</p>
+        </div>
+        <div class="col-6 right-footer-col">
+          <form>
+            <div class="form-group row">
+              <label for="organisation" class="col-3 col-form-label text-right">Организация</label>
+              <div class="col-9 ml-auto pl-0">
+                <input type="text" class="form-control" id="organisation" placeholder="">
+              </div>
+            </div>
+          </form>
+          <form>
+            <div class="form-group row">
+              <label for="telephone" class="col-3 col-form-label text-right">Телефон</label>
+              <div class="col-9 ml-auto pl-0">
+                <input type="text" class="form-control" id="telephone" placeholder="">
+              </div>
+            </div>
+          </form>
+          <form>
+            <div class="form-group row">
+              <label for="email" class="col-3 col-form-label text-right">Email</label>
+              <div class="col-9 ml-auto pl-0">
+                <input type="text" class="form-control" id="email" placeholder="">
+              </div>
+            </div>
+          </form>
+          <form>
+            <div class="form-group row">
+              <label for="supplier-name" class="col-3 col-form-label text-right">Имя</label>
+              <div class="col-9 ml-auto pl-0">
+                <input type="text" class="form-control" id="supplier-name" placeholder="">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
