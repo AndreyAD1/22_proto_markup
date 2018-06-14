@@ -1,3 +1,8 @@
+.app-button {
+  border-radius: 20px;
+  border: 1px solid;
+}
+
 .application-info {
   border-top: 2px solid;
   padding-top: 5px;
@@ -12,19 +17,20 @@
   background-color: #d0d0d0;
 }
 
-.fa {
-  color: black;
+.align-bottom {
+  align-items: baseline;
 }
 
-.header {
-  background-color: #eaeaea;
-  min-height: 30pt;
-  vertical-align: center;
-  padding-top: 5pt;
+.big-font-size {
+  font-size: 16pt;
 }
 
-.footer {
- background-color: #eaeaea;
+.brn-sm {
+  border-radius: 10px;
+}
+
+body {
+  font-size: 12pt;
 }
 
 .clearfix::after {
@@ -35,14 +41,31 @@
   background-color: #dddddd;
 }
 
-.left-item {
-  float: left;
-  margin-right: 2%;
+.fa {
+  color: black;
 }
 
-.right-item {
-  float: right;
-  margin-left: 5%
+.faded-font {
+  color: #999999;
+}
+
+.footer {
+ background-color: #eaeaea;
+}
+
+.form-control {
+  border: 2px solid;
+}
+
+.header {
+  background-color: #eaeaea;
+  min-height: 30pt;
+  vertical-align: center;
+  padding-top: 5pt;
+}
+
+.large-font-size {
+  font-size: 22pt;
 }
 
 .left-header {
@@ -50,67 +73,13 @@
   min-width: 350px;
 }
 
-.right-header {
-  float: right;
-  min-width: 350px;
-  margin-right: 3%;
-}
-
-.underlined-text {
-  text-decoration: underline;
-}
-
-body {
-  font-size: 12pt;
-}
-
-.small-font-size {
-  font-size: 10pt;
-}
-
-.big-font-size {
-  font-size: 16pt;
-}
-
-.large-font-size {
-  font-size: 22pt;
-}
-
-.align-bottom {
-  align-items: baseline;
-}
-
-.participants {
-  height: 20px;
+.left-item {
+  float: left;
+  margin-right: 2%;
 }
 
 .pale-font {
   color: #626256;
-}
-
-.faded-font {
-  color: #999999;
-}
-
-.app-button {
-  border-radius: 20px;
-  border: 1px solid;
-}
-
-.telephone-button {
-  display: inline-block;
-}
-
-.brn-sm {
-  border-radius: 10px;
-}
-
-.view-number {
-  display: inline-block;
-}
-
-.review {
-  text-align: left;
 }
 
 .reviewer-name {
@@ -119,11 +88,34 @@ body {
   margin: 0;
 }
 
+.right-header {
+  float: right;
+  min-width: 350px;
+  margin-right: 3%;
+}
+
+.right-item {
+  float: right;
+  margin-left: 5%
+}
+
 .small-button {
   border: 2px solid;
   box-shadow: 5px 5px;
 }
 
-.form-control {
-  border: 2px solid;
+.small-font-size {
+  font-size: 10pt;
+}
+
+.telephone-button {
+  display: inline-block;
+}
+
+.underlined-text {
+  text-decoration: underline;
+}
+
+.view-number {
+  display: inline-block;
 }
