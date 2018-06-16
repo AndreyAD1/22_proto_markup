@@ -92,6 +92,7 @@ body {
   float: right;
   min-width: 350px;
   margin-right: 3%;
+  text-align: right;
 }
 
 .right-item {

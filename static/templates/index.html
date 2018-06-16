@@ -26,7 +26,7 @@
         </div>
       </div>
       <div class="right-header underlined-text">
-        <a href="#">Леонид Федорович</a>
+        <a href="#">{{ user_name }}</a>
         <div class="right-item underlined-text">
           <a href="#">выход</a>
         </div>
@@ -41,10 +41,10 @@
         <div class="row align-bottom ">
           <div class="col">Участники в Новосибирске:</div>
           <div class="col big-font-size underlined-text">
-            <a href="#">105 оптовых компаний</a>
+            <a href="#">{{ wholesalers_number }} оптовых компаний</a>
           </div>
           <div class="col big-font-size underlined-text">
-            <a href="#">25 производителей</a>
+            <a href="#">{{ producers_number }} производителей</a>
           </div>
         </div>
       </div>
@@ -166,79 +166,21 @@
               </div>
 
 <!--карточки заявок-->
-              
-              
-                <div class="col-12 application-info">
-              
-                <div class="row">
-                  <div class="col-9 application-features">
-                    <p>вчера, в 21:30</p>
-                    <p>60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.</p>
-                    <p>Алексей</p>
-                    <div class="telephone-button">
-                      <button type="button" class="btn brn-sm">Показать телефон</button>
-                    </div>
-                    <div class="view-number small-font-size">12 просмотров</div>
-                  </div>
-                  <div class="col-auto ml-auto bookmarks">
-                    <i class="fas fa-star"></i>
-                    <a class="pale-font underlined-text" href="#">в закладки</a>
-                  </div>
-                </div>
-              </div>
-              
-              
-                <div class="col-12 application-info">
-              
-                <div class="row">
-                  <div class="col-9 application-features">
-                    <p>вчера, в 21:30</p>
-                    <p>60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.</p>
-                    <p>Алексей</p>
-                    <div class="telephone-button">
-                      <button type="button" class="btn brn-sm">Показать телефон</button>
-                    </div>
-                    <div class="view-number small-font-size">12 просмотров</div>
-                  </div>
-                  <div class="col-auto ml-auto bookmarks">
-                    <i class="fas fa-star"></i>
-                    <a class="pale-font underlined-text" href="#">в закладки</a>
-                  </div>
-                </div>
-              </div>
-              
-              
-                <div class="col-12 application-info">
-              
-                <div class="row">
-                  <div class="col-9 application-features">
-                    <p>вчера, в 21:30</p>
-                    <p>60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.</p>
-                    <p>Алексей</p>
-                    <div class="telephone-button">
-                      <button type="button" class="btn brn-sm">Показать телефон</button>
-                    </div>
-                    <div class="view-number small-font-size">12 просмотров</div>
-                  </div>
-                  <div class="col-auto ml-auto bookmarks">
-                    <i class="fas fa-star"></i>
-                    <a class="pale-font underlined-text" href="#">в закладки</a>
-                  </div>
-                </div>
-              </div>
-              
-              
+              {% for application in applications %}
+              {% if loop.last %}
                 <div class="col-12 application-info last">
-              
+              {% else %}
+                <div class="col-12 application-info">
+              {% endif %}
                 <div class="row">
                   <div class="col-9 application-features">
-                    <p>вчера, в 21:30</p>
-                    <p>60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.</p>
-                    <p>Алексей</p>
+                    <p>{{ application['application_time'] }}</p>
+                    <p>{{ application['application_description'] }}</p>
+                    <p>{{ application['customer_name'] }}</p>
                     <div class="telephone-button">
                       <button type="button" class="btn brn-sm">Показать телефон</button>
                     </div>
-                    <div class="view-number small-font-size">12 просмотров</div>
+                    <div class="view-number small-font-size">{{ application['view_number'] }} просмотров</div>
                   </div>
                   <div class="col-auto ml-auto bookmarks">
                     <i class="fas fa-star"></i>
@@ -246,7 +188,7 @@
                   </div>
                 </div>
               </div>
-              
+              {% endfor %}
             </div>
             <div class="mt-3 text-center">
               <button type="button" class="btn btn-light btn-lg app-button">Посмотреть все заявки</button>
@@ -267,29 +209,12 @@
                   </a>
                 </div>
                 <div class="carousel-inner col-8 ml-auto mr-auto">
-                  
-                  
+                  {% for review in reviews %}
+                  {% if loop.first %}
                     <div class="carousel-item active">
-                  
-                    <div class="row border border-secondary">
-                      <div class="col-2 pt-2">
-                        <i class="fas fa-user-circle fa-4x"></i>
-                      </div>
-                      <div class="col-10 pt-2">
-                          <p class="reviewer-name">Кирилл, 29 лет, г. Барабинск</p>
-                          <p>Бла-бла, мне помогло, все супер!
-                            Бла-бла, мне помогло, все супер!
-                            Бла-бла, мне помогло, все супер!
-                            Бла-бла, мне помогло, все супер!
-                            Бла-бла, мне помогло, все супер!
-                          </p>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  
+                  {% else %}
                     <div class="carousel-item">
-                  
+                  {% endif %}
                     <div class="row border border-secondary">
                       <div class="col-2 pt-2">
                         <i class="fas fa-user-circle fa-4x"></i>
@@ -305,26 +230,7 @@
                       </div>
                     </div>
                   </div>
-                  
-                  
-                    <div class="carousel-item">
-                  
-                    <div class="row border border-secondary">
-                      <div class="col-2 pt-2">
-                        <i class="fas fa-user-circle fa-4x"></i>
-                      </div>
-                      <div class="col-10 pt-2">
-                          <p class="reviewer-name">Кирилл, 29 лет, г. Барабинск</p>
-                          <p>Бла-бла, мне помогло, все супер!
-                            Бла-бла, мне помогло, все супер!
-                            Бла-бла, мне помогло, все супер!
-                            Бла-бла, мне помогло, все супер!
-                            Бла-бла, мне помогло, все супер!
-                          </p>
-                      </div>
-                    </div>
-                  </div>
-                  
+                  {% endfor %}
                 </div>
                 <div class="col-1 mt-auto mb-auto pl-0">
                   <a class="controls" href="#carousel" role="button" data-slide="next">
