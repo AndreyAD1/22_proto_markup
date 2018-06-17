@@ -1,6 +1,7 @@
 # Suppliers in Novosibirsk
 
-[TODO. There will be project description]
+This is the site of hypothetic service providing supplier search: 
+https://andreyad1.github.io/22_proto_markup/
 
 # Project Goals
 

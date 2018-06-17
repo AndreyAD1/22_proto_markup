@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/fontawesome-all.min.css">
+  <title>Заявки</title>
+</head>
+<body>
+  <header>
+    <div class="header clearfix common-font-size mb-3">
+      <div class="left-item left-header">
+        <div class="left-item">
+          Регион:
+        </div>
+        <div class="dropdown underlined-text">
+          <a href="#" class="dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Новосибирск и область
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item">Другой регион</a>
+          </div>
+        </div>
+      </div>
+      <div class="right-header underlined-text">
+        <a href="#">{{ user_name }}</a>
+        <div class="right-item underlined-text">
+          <a href="#">выход</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="col-auto left-header">
+    <div class="row">
+      <div>
+        <i class="fas fa-home fa-4x"></i>
+      </div>
+      <div class="col-auto pt-4">
+        <p>Логотип</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-9 ml-auto mr-auto mb-5 new-applications">
+        <div class="row">
+          <div class="col-auto ml-0 large-font-size mb-3">Заявки</div>
+          <div class="w-100"></div>
+          <!--меню свежих заявок-->
+          <div class="col mb-2 pale-font">
+            <div class="row">
+              <div class="col-auto app-section">
+                <div class="row">
+                  <div class="col-auto app-type">раздел:</div>
+                  <div class="col-auto section-dropdown">
+                    <a class="dropdown-toggle pale-font underlined-text" href="#" id="applicationType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Все
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="applicationType">
+                      <a class="dropdown-item" href="#">Другой раздел</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto app-region ml-auto">
+                <div class="row">
+                <div class="col-auto">регион:</div>
+                  <div class="col-auto">
+                    <a class="dropdown-toggle underlined-text pale-font" href="#" id="applicationRegion" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Новосибирск и область
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="applicationRegion">
+                      <a class="dropdown-item">Другой регион</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+<!--карточки заявок-->
+          {% for application in applications %}
+          {% if loop.last %}
+          <div class="col-12 application-info last">
+          {% else %}
+          <div class="col-12 application-info">
+          {% endif %}
+            <div class="row">
+              <div class="col-9 application-features">
+                <p>{{ application['application_time'] }}</p>
+                <p>{{ application['application_description'] }}</p>
+                <p>{{ application['customer_name'] }}</p>
+                <div class="telephone-button">
+                  <button type="button" class="btn brn-sm">Показать телефон</button>
+                </div>
+                <div class="view-number small-font-size">{{ application['view_number'] }} просмотров</div>
+              </div>
+              <div class="col-auto ml-auto bookmarks">
+                <i class="fas fa-star"></i>
+                <a class="pale-font underlined-text" href="#">в закладки</a>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+
+        <div class="mt-3 text-center">
+          <a href="applications.html" class="btn btn-light btn-lg app-button">Показать ещё</a>
+        </div>
+
+        <nav aria-label="Page navigation">
+          <ul class="pagination col-4 ml-auto mr-auto small-button justify-content-center mt-4">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">... 10</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer pt-3 pb-3">
+    <div class="big-font-size mb-3 text-center">Вы поставщик?</div>
+    <div class="container">
+      <div class="row">
+        <div class="col-6 left-footer-col">
+          <p>Для доступа к телефонам покупателей заполните форму или позвоните нам +7 999 888-77-66</p>
+          <p>Текст с дополнительной информацией по условиям сотрудничества.<br>
+          Возможно, стоит вынести его на отдельную страницу.<br> Текст с дополнительной информацией по условиям сотрудничества.<br>
+          Возможно, стоит вынести его на отдельную страницу.</p>
+        </div>
+        <div class="col-6 right-footer-col">
+          <form>
+            <div class="form-group row">
+              <label for="organisation" class="col-3 col-form-label text-right">Организация</label>
+              <div class="col-9 ml-auto pl-0">
+                <input type="text" class="form-control " id="organisation" placeholder="">
+              </div>
+            </div>
+          </form>
+          <form>
+            <div class="form-group row">
+              <label for="telephone" class="col-3 col-form-label text-right">Телефон</label>
+              <div class="col-9 ml-auto pl-0">
+                <input type="text" class="form-control" id="telephone" placeholder="">
+              </div>
+            </div>
+          </form>
+          <form>
+            <div class="form-group row">
+              <label for="email" class="col-3 col-form-label text-right">Email</label>
+              <div class="col-9 ml-auto pl-0">
+                <input type="text" class="form-control" id="email" placeholder="">
+              </div>
+            </div>
+          </form>
+          <form>
+            <div class="form-group row">
+              <label for="supplier-name" class="col-3 col-form-label text-right">Имя</label>
+              <div class="col-9 ml-auto pl-0">
+                <input type="text" class="form-control" id="supplier-name" placeholder="">
+              </div>
+            </div>
+          </form>
+          <button type="button" class="offset-3 btn btn-light btn-sm small-button">
+            Отправить информацию
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
