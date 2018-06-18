@@ -39,8 +39,8 @@
 
       <div class="col-10 ml-auto mr-auto mb-5">
         <div class="row align-bottom ">
-          <div class="col">Участники в Новосибирске:</div>
-          <div class="col big-font-size underlined-text">
+          <div class="col-12 col-md">Участники в Новосибирске:</div>
+          <div class="col-12 col-md big-font-size underlined-text">
             <a href="#">{{ wholesalers_number }} оптовых компаний</a>
           </div>
           <div class="col big-font-size underlined-text">
@@ -57,7 +57,7 @@
             <div class="big-font-size">
               Я ищу
             </div>
-            <div class="col offset-1 mb-2">
+            <div class="col offset-sm-1 mb-2">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="Check1">
                 <label class="form-check-label" for="Check1">
@@ -86,33 +86,33 @@
               </div>
             </div>
             <form>
-              <div class="col-12 mb-auto pl-0">
+              <div class="col-12 mb-auto pl-lg-0">
                 <div class="row">
-                  <label for="inputDescription" class="col-2 pr-0">Описание *</label>
-                  <div class="col-10 pl-0">
+                  <label for="inputDescription" class="col-12 col-lg-2 pr-0">Описание *</label>
+                  <div class="col-12 col-lg-10 pl-lg-0">
                     <input type="text" class="form-control" id="inputDescription" placeholder="">
                   </div>
                 </div>
               </div>
             </form>
-            <div class="col-10 offset-2 faded-font small-font-size">
+            <div class="col-12 col-lg-10 offset-lg-2 faded-font small-font-size">
               Пример: нужно фбс 2.4.4.6 50 шт плиты пк 20 ПК 60-20-12 в Новолуговое
             </div>
             <form>
               <div class="col-12 mt-1">
                 <div class="row">
-                  <div class="col-6">
-                    <div class="form-group row">
-                      <label for="telephone-number" class="col-form-label">Телефон *</label>
-                      <div class="col-8 ml-4">
+                  <div class="col-12 col-lg-6">
+                    <div class="form-group row mb-0">
+                      <label for="telephone-number" class="col-form-label ml-3 ml-lg-0">Телефон *</label>
+                      <div class="col-12 col-lg-8 ml-xl-4">
                         <input type="text" class="form-control" id="telephone-number">
                       </div>
                     </div>
                   </div>
-                  <div class="col-5 ml-auto">
+                  <div class="col-12 col-lg-5 ml-auto">
                     <div class="form-group row">
-                      <label for="name" class="col-2 col-form-label">Имя</label>
-                      <div class="col-10">
+                      <label for="name" class="col-12 col-lg-2 col-form-label">Имя</label>
+                      <div class="col-12 col-lg-10">
                         <input type="text" class="form-control" placeholder="" id="name">
                       </div>
                     </div>
@@ -149,7 +149,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-auto app-region ml-auto">
+                  <div class="col-auto app-region ml-md-auto">
                     <div class="row">
                     <div class="col-auto region">регион:</div>
                       <div class="col-auto region-dropdown underlined-text pale-font">
@@ -168,21 +168,21 @@
 <!--карточки заявок-->
               {% for application in applications %}
               {% if loop.last %}
-                <div class="col-12 application-info last">
+                <div class="col-12 pt-2 pb-3 application-info last">
               {% else %}
-                <div class="col-12 application-info">
+                <div class="col-12 pt-2 pb-3 application-info">
               {% endif %}
                 <div class="row">
                   <div class="col-9 application-features">
                     <p>{{ application['application_time'] }}</p>
                     <p>{{ application['application_description'] }}</p>
                     <p>{{ application['customer_name'] }}</p>
-                    <div class="telephone-button">
+                    <div class="telephone-button mb-md-2 mb-lg-0">
                       <button type="button" class="btn brn-sm">Показать телефон</button>
                     </div>
                     <div class="view-number small-font-size">{{ application['view_number'] }} просмотров</div>
                   </div>
-                  <div class="col-auto ml-auto bookmarks">
+                  <div class="col-auto ml-lg-auto bookmarks">
                     <i class="fas fa-star"></i>
                     <a class="pale-font underlined-text" href="#">в закладки</a>
                   </div>
@@ -198,11 +198,11 @@
       </div>
       <div class="w-100"></div>
       <div class="col-12 reviews mb-4">
-        <div class="row" style="align-items: center">
+        <div class="row align-items-center">
           <div class="col-8 offset-2">
             <div id="carousel" class="carousel slide">
               <div class="row">
-                <div class="col-1 mt-auto mb-auto pr-0 text-right">
+                <div class="col-1 mt-auto mb-auto pr-lg-0 text-lg-right">
                   <a class="controls" href="#carousel" role="button" data-slide="prev">
                     <span class="fa fa-caret-left fa-3x" aria-hidden="true"></span>
                     <span class="sr-only">Предыдущий</span>
@@ -216,7 +216,7 @@
                     <div class="carousel-item">
                   {% endif %}
                     <div class="row border border-secondary">
-                      <div class="col-2 pt-2">
+                      <div class="col-12 col-lg-2 pt-2">
                         <i class="fas fa-user-circle fa-4x"></i>
                       </div>
                       <div class="col-10 pt-2">
@@ -241,8 +241,8 @@
               </div>
             </div>
           </div>
-          <div class="col-2">
-            <button type="button" class="btn btn-light btn-sm small-button">
+          <div class="col-12 text-center col-lg-2">
+            <button type="button" class="btn btn-light btn-sm small-button mt-3 mt-lg-0 mr-lg-0">
               Оставить отзыв
             </button>
           </div>
@@ -255,48 +255,52 @@
     <div class="big-font-size mb-3 text-center">Вы поставщик?</div>
     <div class="container">
       <div class="row">
-        <div class="col-6 left-footer-col">
+        <div class="col-12 col-lg-6 left-footer-col">
           <p>Для доступа к телефонам покупателей заполните форму или позвоните нам +7 999 888-77-66</p>
           <p>Текст с дополнительной информацией по условиям сотрудничества.<br>
           Возможно, стоит вынести его на отдельную страницу.<br> Текст с дополнительной информацией по условиям сотрудничества.<br>
           Возможно, стоит вынести его на отдельную страницу.</p>
         </div>
-        <div class="col-6 right-footer-col">
+        <div class="col-12 col-lg-6 right-footer-col">
           <form>
-            <div class="form-group row">
-              <label for="organisation" class="col-3 col-form-label text-right">Организация</label>
-              <div class="col-9 ml-auto pl-0">
+            <div class="form-group row mb-0 mb-sm-3">
+              <label for="organisation" class="col-12 col-sm-3 col-form-label text-center text-sm-right">
+                Организация
+              </label>
+              <div class="col-12 col-sm-9 ml-auto pl-sm-0">
                 <input type="text" class="form-control " id="organisation" placeholder="">
               </div>
             </div>
           </form>
           <form>
-            <div class="form-group row">
-              <label for="telephone" class="col-3 col-form-label text-right">Телефон</label>
-              <div class="col-9 ml-auto pl-0">
+            <div class="form-group row mb-0 mb-sm-3">
+              <label for="telephone" class="col-12 col-sm-3 col-form-label text-center text-sm-right">Телефон</label>
+              <div class="col-12 col-sm-9 ml-auto pl-sm-0">
                 <input type="text" class="form-control" id="telephone" placeholder="">
               </div>
             </div>
           </form>
           <form>
-            <div class="form-group row">
-              <label for="email" class="col-3 col-form-label text-right">Email</label>
-              <div class="col-9 ml-auto pl-0">
+            <div class="form-group row mb-0 mb-sm-3">
+              <label for="email" class="col-12 col-sm-3 col-form-label text-center text-sm-right">Email</label>
+              <div class="col-12 col-sm-9 ml-auto pl-sm-0">
                 <input type="text" class="form-control" id="email" placeholder="">
               </div>
             </div>
           </form>
           <form>
-            <div class="form-group row">
-              <label for="supplier-name" class="col-3 col-form-label text-right">Имя</label>
-              <div class="col-9 ml-auto pl-0">
+            <div class="form-group row mb-0 mb-sm-3">
+              <label for="supplier-name" class="col-12 col-sm-3 col-form-label text-center text-sm-right">Имя</label>
+              <div class="col-12 col-sm-9 ml-auto pl-sm-0">
                 <input type="text" class="form-control" id="supplier-name" placeholder="">
               </div>
             </div>
           </form>
-          <button type="button" class="offset-3 btn btn-light btn-sm small-button">
-            Отправить информацию
-          </button>
+          <div class="col-12 text-center text-sm-left mt-3">
+            <button type="button" class="offset-sm-3 btn btn-light btn-sm small-button">
+              Отправить информацию
+            </button>
+          </div>
         </div>
       </div>
     </div>
