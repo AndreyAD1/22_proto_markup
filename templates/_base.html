@@ -9,7 +9,29 @@
   <title>{% block title %}{% endblock %} - Поставщики Новосибирска</title>
 </head>
 <body>
+  <nav class="navbar navbar-expand-sm justify-content-start navbar-light header">
+    <div class="col-auto text-right pr-0">Регион:</div>
+    <div class="col-auto dropdown underlined-text">
+      <a href="#" class="dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Новосибирск и область
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item">Другой регион</a>
+      </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end ml-3" id="navbarToggler">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link underlined-text" href="#" style="color: #007bff">{{ user_name }}</a>
+        <a class="nav-item nav-link underlined-text" href="#" style="color: #007bff">выход</a>
+      </div>
+    </div>
+  </nav>
+
   {% block content %}{% endblock %}
+
   <footer class="footer pt-3 pb-3">
     <div class="big-font-size mb-3 text-center">Вы поставщик?</div>
     <div class="container">
