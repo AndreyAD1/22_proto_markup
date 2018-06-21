@@ -9,29 +9,26 @@
   <title>Заявки</title>
 </head>
 <body>
-  <header>
-    <div class="header clearfix common-font-size mb-3">
-      <div class="left-item left-header">
-        <div class="left-item">
-          Регион:
-        </div>
-        <div class="dropdown underlined-text">
-          <a href="#" class="dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Новосибирск и область
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item">Другой регион</a>
-          </div>
-        </div>
-      </div>
-      <div class="right-header underlined-text">
-        <a href="#">{{ user_name }}</a>
-        <div class="right-item underlined-text">
-          <a href="#">выход</a>
-        </div>
+  <nav class="navbar navbar-expand-sm justify-content-start navbar-light header">
+    <div class="col-auto text-right pr-0">Регион:</div>
+    <div class="col-auto dropdown underlined-text">
+      <a href="#" class="dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Новосибирск и область
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item">Другой регион</a>
       </div>
     </div>
-  </header>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end ml-3" id="navbarToggler">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link underlined-text" href="#" style="color: #007bff">{{ user_name }}</a>
+        <a class="nav-item nav-link underlined-text" href="#" style="color: #007bff">выход</a>
+      </div>
+    </div>
+  </nav>
 
   <div class="col-auto left-header">
     <div class="row">
