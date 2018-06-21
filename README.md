@@ -18,7 +18,7 @@ It is recommended to use virtual environment for better isolation.
 # Quick Start
 
 The script `site_render.py` creates HTML pages of the site. 
-The script uses templates placed in the folder `static/templates/`.
+The script uses templates placed in the folder `templates/`.
 The context of pages is located in the file `site_render.py`.
 
 To run script on Linux:
