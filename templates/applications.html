@@ -90,19 +90,17 @@
           <div class="col-12 pt-2 pb-3 application-info">
           {% endif %}
             <div class="row">
-              <div class="col-9 application-features">
-                <p>{{ application['application_time'] }}</p>
-                <p>{{ application['application_description'] }}</p>
-                <p>{{ application['customer_name'] }}</p>
-                <div class="telephone-button mb-md-2 mb-lg-0">
-                  <button type="button" class="btn brn-sm">Показать телефон</button>
-                </div>
-                <div class="view-number small-font-size">{{ application['view_number'] }} просмотров</div>
-              </div>
-              <div class="col-auto ml-lg-auto bookmarks">
+              <div class="col-12 col-lg-6 ">{{ application['application_time'] }}</div>
+              <div class="col-12 col-lg-6  mb-3 text-lg-right bookmarks">
                 <i class="fas fa-star"></i>
                 <a class="pale-font underlined-text" href="#">в закладки</a>
               </div>
+              <div class="col-12 mb-2">{{ application['application_description'] }}</div>
+              <div class="col-12 mb-2">{{ application['customer_name'] }}</div>
+              <div class="col-12 col-md-auto mb-2 mb-lg-0">
+                <button type="button" class="btn brn-sm">Показать телефон</button>
+              </div>
+              <div class="col-12 col-md-auto pt-md-3 pl-md-0 small-font-size">{{ application['view_number'] }} просмотров</div>
             </div>
           </div>
           {% endfor %}

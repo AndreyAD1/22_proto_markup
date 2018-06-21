@@ -109,14 +109,6 @@ body {
   font-size: 10pt;
 }
 
-.telephone-button {
-  display: inline-block;
-}
-
 .underlined-text {
   text-decoration: underline;
-}
-
-.view-number {
-  display: inline-block;
 }

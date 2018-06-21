@@ -108,6 +108,6 @@ if __name__ == "__main__":
             ('index.html', context_index),
             ('applications.html', context_applications)
         ],
-        searchpath='static/templates'
+        searchpath='templates/'
     )
     site.render()
