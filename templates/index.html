@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-  <title>Поставщики Новосибирска</title>
-</head>
+{% extends "_base.html" %}
+{% block title %}Главная{% endblock %}
+{% block content %}
 <body>
   <nav class="navbar navbar-expand-sm justify-content-start navbar-light header">
     <div class="col-auto text-right pr-0">Регион:</div>
@@ -242,63 +235,4 @@
       </div>
     </div>
   </div>
-
-  <footer class="footer pt-3 pb-3">
-    <div class="big-font-size mb-3 text-center">Вы поставщик?</div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-6 left-footer-col">
-          <p>Для доступа к телефонам покупателей заполните форму или позвоните нам +7 999 888-77-66</p>
-          <p>Текст с дополнительной информацией по условиям сотрудничества.<br>
-          Возможно, стоит вынести его на отдельную страницу.<br> Текст с дополнительной информацией по условиям сотрудничества.<br>
-          Возможно, стоит вынести его на отдельную страницу.</p>
-        </div>
-        <div class="col-12 col-lg-6 right-footer-col">
-          <form>
-            <div class="form-group row mb-0 mb-sm-3">
-              <label for="organisation" class="col-12 col-sm-3 col-form-label text-center text-sm-right">
-                Организация
-              </label>
-              <div class="col-12 col-sm-9 ml-auto pl-sm-0">
-                <input type="text" class="form-control " id="organisation" placeholder="">
-              </div>
-            </div>
-          </form>
-          <form>
-            <div class="form-group row mb-0 mb-sm-3">
-              <label for="telephone" class="col-12 col-sm-3 col-form-label text-center text-sm-right">Телефон</label>
-              <div class="col-12 col-sm-9 ml-auto pl-sm-0">
-                <input type="text" class="form-control" id="telephone" placeholder="">
-              </div>
-            </div>
-          </form>
-          <form>
-            <div class="form-group row mb-0 mb-sm-3">
-              <label for="email" class="col-12 col-sm-3 col-form-label text-center text-sm-right">Email</label>
-              <div class="col-12 col-sm-9 ml-auto pl-sm-0">
-                <input type="text" class="form-control" id="email" placeholder="">
-              </div>
-            </div>
-          </form>
-          <form>
-            <div class="form-group row mb-0 mb-sm-3">
-              <label for="supplier-name" class="col-12 col-sm-3 col-form-label text-center text-sm-right">Имя</label>
-              <div class="col-12 col-sm-9 ml-auto pl-sm-0">
-                <input type="text" class="form-control" id="supplier-name" placeholder="">
-              </div>
-            </div>
-          </form>
-          <div class="col-12 text-center text-sm-left mt-3">
-            <button type="button" class="offset-sm-3 btn btn-light btn-sm small-button">
-              Отправить информацию
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-</body>
-</html>
+{% endblock %}
