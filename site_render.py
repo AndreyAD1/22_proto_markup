@@ -11,40 +11,14 @@ context_index = {
             'application_description': '60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.',
             'customer_name': 'Алексей',
             'view_number': '12',
-        },
-        {
-            'application_time': 'вчера, в 21:30',
-            'application_description': '60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.',
-            'customer_name': 'Алексей',
-            'view_number': '12',
-        },
-        {
-            'application_time': 'вчера, в 21:30',
-            'application_description': '60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.',
-            'customer_name': 'Алексей',
-            'view_number': '12',
-        },
-        {
-            'application_time': 'вчера, в 21:30',
-            'application_description': '60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.',
-            'customer_name': 'Алексей',
-            'view_number': '12',
         }
-    ],
+    ]*4,
     'reviews': [
         {
             'reviewer_name': 'Кирилл, 29 лет, г. Барабинск',
             'review_text': 'Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер!',
-        },
-        {
-            'reviewer_name': 'Кирилл, 29 лет, г. Барабинск',
-            'review_text': 'Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер!',
-        },
-        {
-            'reviewer_name': 'Кирилл, 29 лет, г. Барабинск',
-            'review_text': 'Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер!',
         }
-    ]
+    ]*3
 }
 
 context_applications = {
@@ -55,50 +29,8 @@ context_applications = {
             'application_description': '60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.',
             'customer_name': 'Алексей',
             'view_number': '12',
-        },
-        {
-            'application_time': 'вчера, в 21:30',
-            'application_description': '60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.',
-            'customer_name': 'Алексей',
-            'view_number': '12',
-        },
-        {
-            'application_time': 'вчера, в 21:30',
-            'application_description': '60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.',
-            'customer_name': 'Алексей',
-            'view_number': '12',
-        },
-        {
-            'application_time': 'вчера, в 21:30',
-            'application_description': '60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.',
-            'customer_name': 'Алексей',
-            'view_number': '12',
-        },
-        {
-            'application_time': 'вчера, в 21:30',
-            'application_description': '60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.',
-            'customer_name': 'Алексей',
-            'view_number': '12',
-        },
-        {
-            'application_time': 'вчера, в 21:30',
-            'application_description': '60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.',
-            'customer_name': 'Алексей',
-            'view_number': '12',
-        },
-        {
-            'application_time': 'вчера, в 21:30',
-            'application_description': '60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.',
-            'customer_name': 'Алексей',
-            'view_number': '12',
-        },
-        {
-            'application_time': 'вчера, в 21:30',
-            'application_description': '60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.',
-            'customer_name': 'Алексей',
-            'view_number': '12',
         }
-    ]
+    ]*8
 }
 
 
